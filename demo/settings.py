@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h&4kior16xzvax#s)kcz6ssd4#g=9f_-l6b9q-dt#18weqbkdu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['44.208.34.246']
+ALLOWED_HOSTS = []
 STATIC_ROOT = '/var/www/demo_poc/assets/'
 
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hw3_page',
+    'hw2_page',
 ]
 
 MIDDLEWARE = [

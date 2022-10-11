@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from hw3_page import views as hw3Views
+from hw2_page import views as hw2Views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    path('', hw3Views.home ),
+    path('hw3', hw3Views.home ),
+    path('hw2', hw2Views.home )
 ]
